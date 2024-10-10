@@ -10,9 +10,11 @@
 		7E9992E32C277CC9008C9CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9992E22C277CC9008C9CD3 /* AppDelegate.swift */; };
 		7E9992E52C277CC9008C9CD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9992E42C277CC9008C9CD3 /* SceneDelegate.swift */; };
 		7E9992E72C277CC9008C9CD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9992E62C277CC9008C9CD3 /* ViewController.swift */; };
-		7E9992EA2C277CC9008C9CD3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7E9992E92C277CC9008C9CD3 /* Base */; };
 		7E9992EC2C277CCA008C9CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E9992EB2C277CCA008C9CD3 /* Assets.xcassets */; };
 		7E9992EF2C277CCA008C9CD3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7E9992EE2C277CCA008C9CD3 /* Base */; };
+		7EFDDF232CB74C67000C24CF /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFDDF222CB74C67000C24CF /* RxCocoa */; };
+		7EFDDF252CB74C67000C24CF /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFDDF242CB74C67000C24CF /* RxRelay */; };
+		7EFDDF272CB74C67000C24CF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFDDF262CB74C67000C24CF /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +22,6 @@
 		7E9992E22C277CC9008C9CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E9992E42C277CC9008C9CD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9992E62C277CC9008C9CD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7E9992E92C277CC9008C9CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E9992EB2C277CCA008C9CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E9992EE2C277CCA008C9CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E9992F02C277CCA008C9CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +32,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFDDF272CB74C67000C24CF /* RxSwift in Frameworks */,
+				7EFDDF252CB74C67000C24CF /* RxRelay in Frameworks */,
+				7EFDDF232CB74C67000C24CF /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +63,6 @@
 				7E9992E22C277CC9008C9CD3 /* AppDelegate.swift */,
 				7E9992E42C277CC9008C9CD3 /* SceneDelegate.swift */,
 				7E9992E62C277CC9008C9CD3 /* ViewController.swift */,
-				7E9992E82C277CC9008C9CD3 /* Main.storyboard */,
 				7E9992EB2C277CCA008C9CD3 /* Assets.xcassets */,
 				7E9992ED2C277CCA008C9CD3 /* LaunchScreen.storyboard */,
 				7E9992F02C277CCA008C9CD3 /* Info.plist */,
@@ -111,6 +114,9 @@
 				Base,
 			);
 			mainGroup = 7E9992D62C277CC9008C9CD3;
+			packageReferences = (
+				7EFDDF212CB74C67000C24CF /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 7E9992E02C277CC9008C9CD3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +133,6 @@
 			files = (
 				7E9992EC2C277CCA008C9CD3 /* Assets.xcassets in Resources */,
 				7E9992EF2C277CCA008C9CD3 /* Base in Resources */,
-				7E9992EA2C277CC9008C9CD3 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +152,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7E9992E82C277CC9008C9CD3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E9992E92C277CC9008C9CD3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7E9992ED2C277CCA008C9CD3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +294,6 @@
 				INFOPLIST_FILE = "reactive-textfields/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +321,6 @@
 				INFOPLIST_FILE = "reactive-textfields/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +358,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7EFDDF212CB74C67000C24CF /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7EFDDF222CB74C67000C24CF /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EFDDF212CB74C67000C24CF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		7EFDDF242CB74C67000C24CF /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EFDDF212CB74C67000C24CF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		7EFDDF262CB74C67000C24CF /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EFDDF212CB74C67000C24CF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E9992D72C277CC9008C9CD3 /* Project object */;
 }
