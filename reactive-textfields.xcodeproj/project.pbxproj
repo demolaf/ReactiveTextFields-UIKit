@@ -3,31 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 74;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E9992E32C277CC9008C9CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9992E22C277CC9008C9CD3 /* AppDelegate.swift */; };
-		7E9992E52C277CC9008C9CD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9992E42C277CC9008C9CD3 /* SceneDelegate.swift */; };
-		7E9992E72C277CC9008C9CD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9992E62C277CC9008C9CD3 /* ViewController.swift */; };
-		7E9992EC2C277CCA008C9CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E9992EB2C277CCA008C9CD3 /* Assets.xcassets */; };
-		7E9992EF2C277CCA008C9CD3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7E9992EE2C277CCA008C9CD3 /* Base */; };
 		7EFDDF232CB74C67000C24CF /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFDDF222CB74C67000C24CF /* RxCocoa */; };
 		7EFDDF252CB74C67000C24CF /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFDDF242CB74C67000C24CF /* RxRelay */; };
 		7EFDDF272CB74C67000C24CF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFDDF262CB74C67000C24CF /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E53F1CC2CB7E3C300EB70EA /* reactive-textfields-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactive-textfields-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E9992DF2C277CC9008C9CD3 /* reactive-textfields.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactive-textfields.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E9992E22C277CC9008C9CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E9992E42C277CC9008C9CD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7E9992E62C277CC9008C9CD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7E9992EB2C277CCA008C9CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7E9992EE2C277CCA008C9CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7E9992F02C277CCA008C9CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7EFDE5872CB78355000C24CF /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				/Localized/LaunchScreen.storyboard,
+				Info.plist,
+			);
+			target = 7E9992DE2C277CC9008C9CD3 /* reactive-textfields */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		7EFDE5882CB78355000C24CF /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 7E9992DD2C277CC9008C9CD3 /* Resources */;
+			membershipExceptions = (
+				Base.lproj/LaunchScreen.storyboard,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7E53F1CD2CB7E3C300EB70EA /* reactive-textfields-swiftui */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "reactive-textfields-swiftui"; sourceTree = "<group>"; };
+		7EFDE57F2CB78355000C24CF /* reactive-textfields */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (7EFDE5872CB78355000C24CF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 7EFDE5882CB78355000C24CF /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "reactive-textfields"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		7E53F1C92CB7E3C300EB70EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E9992DC2C277CC9008C9CD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,7 +67,8 @@
 		7E9992D62C277CC9008C9CD3 = {
 			isa = PBXGroup;
 			children = (
-				7E9992E12C277CC9008C9CD3 /* reactive-textfields */,
+				7EFDE57F2CB78355000C24CF /* reactive-textfields */,
+				7E53F1CD2CB7E3C300EB70EA /* reactive-textfields-swiftui */,
 				7E9992E02C277CC9008C9CD3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,26 +77,36 @@
 			isa = PBXGroup;
 			children = (
 				7E9992DF2C277CC9008C9CD3 /* reactive-textfields.app */,
+				7E53F1CC2CB7E3C300EB70EA /* reactive-textfields-swiftui.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		7E9992E12C277CC9008C9CD3 /* reactive-textfields */ = {
-			isa = PBXGroup;
-			children = (
-				7E9992E22C277CC9008C9CD3 /* AppDelegate.swift */,
-				7E9992E42C277CC9008C9CD3 /* SceneDelegate.swift */,
-				7E9992E62C277CC9008C9CD3 /* ViewController.swift */,
-				7E9992EB2C277CCA008C9CD3 /* Assets.xcassets */,
-				7E9992ED2C277CCA008C9CD3 /* LaunchScreen.storyboard */,
-				7E9992F02C277CCA008C9CD3 /* Info.plist */,
-			);
-			path = "reactive-textfields";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7E53F1CB2CB7E3C300EB70EA /* reactive-textfields-swiftui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E53F1D72CB7E3C500EB70EA /* Build configuration list for PBXNativeTarget "reactive-textfields-swiftui" */;
+			buildPhases = (
+				7E53F1C82CB7E3C300EB70EA /* Sources */,
+				7E53F1C92CB7E3C300EB70EA /* Frameworks */,
+				7E53F1CA2CB7E3C300EB70EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7E53F1CD2CB7E3C300EB70EA /* reactive-textfields-swiftui */,
+			);
+			name = "reactive-textfields-swiftui";
+			packageProductDependencies = (
+			);
+			productName = "reactive-textfields-swiftui";
+			productReference = 7E53F1CC2CB7E3C300EB70EA /* reactive-textfields-swiftui.app */;
+			productType = "com.apple.product-type.application";
+		};
 		7E9992DE2C277CC9008C9CD3 /* reactive-textfields */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E9992F32C277CCA008C9CD3 /* Build configuration list for PBXNativeTarget "reactive-textfields" */;
@@ -84,6 +118,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7EFDE57F2CB78355000C24CF /* reactive-textfields */,
 			);
 			name = "reactive-textfields";
 			productName = "reactive-textfields";
@@ -97,16 +134,18 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					7E53F1CB2CB7E3C300EB70EA = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					7E9992DE2C277CC9008C9CD3 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
 			buildConfigurationList = 7E9992DA2C277CC9008C9CD3 /* Build configuration list for PBXProject "reactive-textfields" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -117,52 +156,112 @@
 			packageReferences = (
 				7EFDDF212CB74C67000C24CF /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
+			preferredProjectObjectVersion = 56;
 			productRefGroup = 7E9992E02C277CC9008C9CD3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7E9992DE2C277CC9008C9CD3 /* reactive-textfields */,
+				7E53F1CB2CB7E3C300EB70EA /* reactive-textfields-swiftui */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7E53F1CA2CB7E3C300EB70EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E9992DD2C277CC9008C9CD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E9992EC2C277CCA008C9CD3 /* Assets.xcassets in Resources */,
-				7E9992EF2C277CCA008C9CD3 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7E53F1C82CB7E3C300EB70EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E9992DB2C277CC9008C9CD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E9992E72C277CC9008C9CD3 /* ViewController.swift in Sources */,
-				7E9992E32C277CC9008C9CD3 /* AppDelegate.swift in Sources */,
-				7E9992E52C277CC9008C9CD3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		7E9992ED2C277CCA008C9CD3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E9992EE2C277CCA008C9CD3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
+		7E53F1D82CB7E3C500EB70EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"reactive-textfields-swiftui/Preview Content\"";
+				DEVELOPMENT_TEAM = 3G33A99C47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aob.reactive-textfields-swiftui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E53F1D92CB7E3C500EB70EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"reactive-textfields-swiftui/Preview Content\"";
+				DEVELOPMENT_TEAM = 3G33A99C47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aob.reactive-textfields-swiftui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		7E9992F12C277CCA008C9CD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -339,6 +438,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E53F1D72CB7E3C500EB70EA /* Build configuration list for PBXNativeTarget "reactive-textfields-swiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E53F1D82CB7E3C500EB70EA /* Debug */,
+				7E53F1D92CB7E3C500EB70EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7E9992DA2C277CC9008C9CD3 /* Build configuration list for PBXProject "reactive-textfields" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
